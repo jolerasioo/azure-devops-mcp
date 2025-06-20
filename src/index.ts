@@ -18,7 +18,7 @@ if (args.length === 0) {  console.error(
   process.exit(1);
 }
 
-export const orgName = args[0];
+export const orgName = "josealonso3197";
 const orgUrl = "https://dev.azure.com/" + orgName;
 
 async function getAzureDevOpsToken(): Promise<AccessToken> {
