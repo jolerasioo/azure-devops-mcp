@@ -11,14 +11,14 @@ import { configurePrompts } from "./prompts.js";
 import { configureAllTools } from "./tools.js";
 import { userAgent } from "./utils.js";
 import { packageVersion } from "./version.js";
-const args = process.argv.slice(2);
-if (args.length === 0) {  console.error(
-    "Usage: mcp-server-azuredevops <organization_name>"
-  );
-  process.exit(1);
-}
+//const args = process.argv.slice(2);
+//if (args.length === 0) {  console.error(
+//    "Usage: mcp-server-azuredevops <organization_name>"
+//  );
+//  process.exit(1);
+//}
 
-export const orgName = args[0];
+export const orgName = "josealonso3197";
 const orgUrl = "https://dev.azure.com/" + orgName;
 
 async function getAzureDevOpsToken(): Promise<AccessToken> {
